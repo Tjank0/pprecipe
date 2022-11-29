@@ -1,0 +1,18 @@
+.img-home {
+    width: 30vmax;
+}
+.title {
+    color: rgb(9, 66, 12);
+}
+.title-home {
+    color:rgb(9, 66, 12);
+    margin: 20px;
+    font-size: large;
+}
+.post-text {
+    font-size: 20px;
+    color: blue;
+}
+.img-post {
+    width: 10vw;
+}

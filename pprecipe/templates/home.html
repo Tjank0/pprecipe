@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Главная страница</title>
+{% endblock %}
+
+{% block content %}
+        <div class="title-home">
+            ПП - это легко и вкусно!
+        </div>
+        <div>
+            <img class="img-home" height="600" width="400" src="{% static 'ppbook.jpg' %}" />
+        </div>
+{% endblock %}

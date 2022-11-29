@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Рецепт</title>
+{% endblock %}
+
+{% block content %}
+            <div class="border border-3 border-success w-50 m-2 p-3 rounded-3">
+                <h3 style="color: rgb(0, 51, 25);" class="fs-1">{{post.title}}</h3>
+                <img style="width: 40vw; " src="/static/images/{{post.image}}" alt=""/>
+            
+                <div style="color: rgb(0, 51, 25);" class="fs-6">{{post.text}}</div>
+            </div>
+            <div class="m-2">
+                <a class="btn btn-secondary" href="/editpost/{{post.id}}">
+                    Редактировать
+                </a>
+                <a class="btn btn-secondary" href="/deletepost/{{post.id}}">
+                    Удалить
+                </a>
+            </div>
+{% endblock %}
